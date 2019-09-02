@@ -1,0 +1,170 @@
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fundo-1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+}
+
+.header-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Orbitron;
+  margin: 4px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 12px;
+  margin: 4px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  padding: 8px;
+  width: calc(100% - 16px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+section  {
+  padding: 12px;
+}
+
+h3 {
+  margin: 8px;
+  font-size: 24px;
+}
+
+hr {
+  width: 80%;
+}
+
+#elements, #elementsCamp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element {
+  flex: 1;
+  height: 150px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  margin: 6px;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  margin-top: 16px;
+}
+
+button, input[type="submit"] {
+  height: 40px;
+  border: 0;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #492480;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, a:hover {
+  filter: brightness(0.9);
+}
+
+.event span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.event-checkboxList {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.event-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.event-checkbox span {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type="text"] {
+  height: 24px;
+  width: 60%;
+  max-width: 500px;
+  font-family: Montserrat;
+  font-size: 18px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+#theCityIs {
+  text-align: center;
+  color: gray;
+  margin: 8px;
+  font-size: 20px;
+}
+
+#theCityIs-name, #theCityIs-state, #theCityIs-area {
+  font-weight: bold;
+  color: black;
+}
+
+*:focus {
+  outline: none;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Javascript >> all</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+
+  <body>
+  	<header>
+  	  <div class="header-shadow">
+  	  	<nav>
+  	  	  <ul>
+            <li><a href="#dom">DOM</a></li>
+  	  	  	<li><a href="#events">Eventos</a></li>
+  	  	  	<li><a href="#ajax">Ajax</a></li>
+            <li><a href="atividade.html">Atividade</a></li>
+  	  	  </ul>
+  	  	</nav>
+
+  	  	<h1>Oficina de JavaScript Moderno</h1>
+  	  	<h2>Tornando suas Páginas Dinâmicas</h2>
+  	  </div>
+  	</header>
+
+  	<section id="dom">
+  	  <h3>Manipulação de Elementos</h3>
+
+  	  <div id="elements">
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  </div>
+
+  	  <div id="elements">
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  	<div class="element"></div>
+  	  </div>
+  	</section>
+
+    <section>
+      <h3>Criar e Deletar</h3>
+      <div id="elements-camp">
+      </div>
+    </section>
+
+    <hr>
+
+  	<section id="events">
+  	  <h3>Eventos</h3>
+  	  
+  	  <div class="event">
+  	  	<button onclick="mostrarData()">Clique Aqui</button>
+  	  	<span id="date-value">...</span>
+  	  </div>
+
+  	  <div class="event">
+  	  	<div class="event-checkboxList">
+  	  	  <div class="event-checkbox">
+  	  	    <input type="checkbox" onchange="somarValor(this, 5)" />
+  	  	    <span>R$5,00</span>
+  	  	  </div>
+
+  	  	  <div class="event-checkbox">
+  	  	    <input type="checkbox" onchange="somarValor(this, 2)" />
+  	  	    <span>R$2,00</span>
+  	  	  </div>
+
+  	  	  <div class="event-checkbox">
+  	  	    <input type="checkbox" onchange="somarValor(this, 8)" />
+  	  	    <span>R$8,00</span>
+  	  	  </div> 
+
+  	  	  <div class="event-checkbox">
+  	  	    <input type="checkbox" onchange="somarValor(this, 12)" />
+  	  	    <span>R$12,00</span>
+  	  	  </div>   	  	   	  	    	  	    	  	  
+  	  	</div>
+  	  	
+  	  	<span id="total-value">R$0,00</span>
+  	  </div>
+  	</section>
+
+    <hr>
+
+    <section id="ajax">
+      <h3>Ajax</h3>
+
+      <form>
+        <input type="text" placeholder="CEP" id="cep-input" />
+        <input type="submit" value="Pesquisar" />
+      </form>
+
+      <div id="theCityIs">A Cidade desse CEP é <span id="theCityIs-name">...</span></div>
+      <div id="theCityIs">O Estado dessa Cidade é <span id="theCityIs-state">...</span></div>
+      <div id="theCityIs">A Área dessa Cidade é <span id="theCityIs-area">...</span></div>
+    </section>
+
+     <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
